@@ -1,0 +1,174 @@
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+.menu a{
+    padding: 8px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu a.active{
+    background-color: #00833b;
+    color: white;
+}
+
+/* all */
+
+.all-container .title{
+    font-size: 24px;
+}
+.all-container .title hr{
+    background: #b1b1b1;
+    height: 1px;
+    border: none;
+    margin-top: 4px;
+}
+
+.all-container .category-box{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+.all-container .category-box .box{
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+.all-container .category-box .box a:hover{
+    text-decoration: underline;
+}
+
+.all-container .post-box{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.all-container .post-box .box{
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 8px;
+    min-height: 150px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+}
+.all-container .post-box .box a:hover{
+    text-decoration: underline;
+}
+/* category */
+.category-container .title > div{
+    font-size: 22px;
+}
+.category-container .title > div a{
+    background: #00833b;
+    color: white;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+.category-container .title hr{
+    margin-top: 10px;
+}
+.category-container .category{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+.category-container .category .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+.category-container .category .box .left a{
+    font-size: 22px;
+}
+.category-container .category .box .left a:hover{
+    text-decoration: underline;
+}
+.category-container .category .box .right{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+}
+.category-container .category .box .right .btn-edit{
+    color: #08803e;
+}
+.category-container .category .box .right .btn-delete{
+    color: red;
+}
+
+/* post */
+.post-container .title > div{
+    font-size: 22px;
+}
+.post-container .title > div a{
+    background: #00833b;
+    color: white;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+.post-container .title hr{
+    margin-top: 10px;
+}
+.post-container .post{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+.post-container .post .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+.post-container .post .box .left a,
+.post-container .post .box .left span{
+    font-size: 22px;
+}
+.post-container .post .box .left a:hover{
+    text-decoration: underline;
+}
+.post-container .post .box .right{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+}
+.post-container .post .box .right .btn-edit{
+    color: #08803e;
+}
+.post-container .post .box .right .btn-delete{
+    color: red;
+}
+
+/* pagination style */
+.pagination span[aria-current="page"] span{
+    background: #00833b;
+    color: white;
+}
